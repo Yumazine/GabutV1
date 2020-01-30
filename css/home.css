@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#content{
+    width: 100vw;
+    /* min-height: 100vh; */
+
+    /* background-color: gray; */
+    /* background-color: rgba(0, 0, 0, 0.5); */
+}
+
+#home-moving-background{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+    overflow: hidden;
+}
+
+#moving-bg{
+    position: absolute;
+    width: 110%;
+
+    animation: movingBg infinite linear 12s;
+}
+
+@keyframes movingBg {
+    0%{
+        transform: translate(1em, 1em)
+    }
+    24%{
+        transform: translate(-4em, -4em)
+    }
+    26%{
+        opacity: 1;
+    }
+    30%{
+        opacity: 0;  
+    }
+    34%{
+        opacity: 1;
+    }
+    66%{
+
+    }
+    100%{
+
+    }
+}

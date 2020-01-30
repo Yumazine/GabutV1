@@ -63,11 +63,3 @@
 #header-deku > img{
     height: 100%;
 }
-
-#content{
-    width: 100vw;
-    min-height: 65vh;
-
-    background-color: gray;
-    /* background-color: rgba(0, 0, 0, 0.5); */
-}
