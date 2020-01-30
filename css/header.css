@@ -11,6 +11,8 @@
 
     display: flex;
     align-items: center;
+
+    border-bottom: 3px solid black;
 }
 
 #header-image{
@@ -25,9 +27,41 @@
 }
 
 .header-nav{
+    cursor: pointer;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin: 0 15px;
+    color: rgb(238, 233, 118);
     font-size: 18pt;
+
+    display: flex;
+    height: 100%;
+    padding: .8em 0;
+    align-items: flex-end;
+
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+
+    transition: color .25s ease-in-out;
+}
+
+.header-nav:hover{
+    color: rgb(248, 239, 29)
+}
+
+#header-deku{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 1em;
+}
+
+#header-deku > img{
+    height: 100%;
 }
 
 #content{
