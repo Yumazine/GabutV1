@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+#header{
+    width: 100vw;
+    height: 20vh;
+
+    display: flex;
+    align-items: center;
+}
+
+#header-image{
+    height: 80%;
+    filter: grayscale(45%);
+
+    transition: filter .35s ease-in-out;
+}
+
+#header-image:hover{
+    filter: none;
+}
+
+.header-nav{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0 15px;
+    font-size: 18pt;
+}
+
+#content{
+    width: 100vw;
+    min-height: 65vh;
+
+    background-color: gray;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+}
