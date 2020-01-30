@@ -16,6 +16,7 @@
 }
 
 #header-image{
+    cursor: pointer;
     height: 80%;
     filter: grayscale(45%);
 

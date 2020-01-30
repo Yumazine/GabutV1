@@ -1,4 +1,6 @@
 #footer{
     width: 100vw;
     height: 15vh;
+
+    border-top: 3px solid #000;
 }
