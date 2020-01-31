@@ -15,7 +15,7 @@
 
 .moving-bg{
     position: absolute;
-    width: 120vw;
+    width: 130vw;
     top: 0;
     left: 0;
     z-index: -1;
@@ -59,8 +59,8 @@
 
 .home-circle1{
     position: absolute;
-    width: 45vw;
-    height: 45vw;
+    width: 90vh;
+    height: 90vh;
 
     border-radius: 50%;
     border-top: 5px solid white;
@@ -70,8 +70,8 @@
 
 .home-circle2{
     position: absolute;
-    width: 45vw;
-    height: 45vw;
+    width: 90vh;
+    height: 90vh;
 
     border-radius: 50%;
     border-top: 5px solid rgb(248, 239, 29);
