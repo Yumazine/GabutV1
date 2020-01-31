@@ -1,11 +1,17 @@
 #header{
+    position: relative;
     width: 100vw;
     height: 20vh;
 
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
 
     border-bottom: 3px solid black;
+}
+
+.header-other-image{
+    height: 100%;
 }
 
 #header-image{
@@ -20,17 +26,26 @@
     filter: none;
 }
 
+#nav{
+    height: 0;
+    top: 2em;
+    position: sticky;
+    z-index: 1;
+}
+
 .header-nav{
     cursor: pointer;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin: 0 15px;
+    margin: 0;
     color: rgb(238, 233, 118);
     font-size: 18pt;
+    width: 7em;
 
     display: flex;
+    align-items: center;
     height: 100%;
     padding: .8em 0;
-    align-items: flex-end;
+    padding-left: .5em;
 
     text-shadow:
         -1px -1px 0 #000,
@@ -41,19 +56,12 @@
     transition: color .25s ease-in-out;
 }
 
+.header-nav > div{
+    background-color: yellow;
+    width: 90%;
+    padding: .3em .3em;
+}
+
 .header-nav:hover{
-    color: rgb(248, 239, 29)
-}
-
-#header-deku{
-    height: 100%;
-    width: 100%;
-
-    display: flex;
-    justify-content: flex-end;
-    padding: 0 1em;
-}
-
-#header-deku > img{
-    height: 100%;
+    color: white;
 }

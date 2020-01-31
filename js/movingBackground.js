@@ -27,6 +27,8 @@ function onload(){
         else if(movingBgIdx == 1)
             movingBgArr[1].style = "transform: translate(0px, 0px)"
         else if(movingBgIdx == 2)
-            movingBgArr[2].style = "transform: translate(-" + (movingBgArr[2].width - window.innerWidth) + "px, -" + (movingBgArr[2].height - window.innerHeight) + "px)"
+            movingBgArr[2].style = "transform: translate(-" + (movingBgArr[2].width - window.innerWidth) + "px, -" + (movingBgArr[2].height - window.innerHeight - 1) + "px)"
     }, 8000)
+
+    
 }
