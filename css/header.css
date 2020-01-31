@@ -8,10 +8,16 @@
     justify-content: space-evenly;
 
     border-bottom: 3px solid black;
+    overflow: hidden;
 }
 
 .header-other-image{
     height: 100%;
+}
+
+#image1{
+    height: 150%;
+    transform: translate(0, 20%)
 }
 
 #header-image{
@@ -27,40 +33,49 @@
 }
 
 #nav{
-    height: 0;
-    top: 2em;
     position: sticky;
+    top: 1em;
     z-index: 1;
 }
 
-.header-nav{
-    cursor: pointer;
+/* color: rgb(238, 233, 118); */
+
+.nav-item{
+    position: absolute;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin: 0;
     color: rgb(238, 233, 118);
-    font-size: 18pt;
-    width: 7em;
+    text-shadow: 
+        -1px -1px #000,
+        1px -1px #000,
+        -1px 1px #000,
+        1px 1px #000,
+        -2px -2px #000,
+        2px -2px #000,
+        -2px 2px #000,
+        2px 2px #000;
+    font-size: 24pt;
 
     display: flex;
-    align-items: center;
-    height: 100%;
-    padding: .8em 0;
-    padding-left: .5em;
 
-    text-shadow:
-        -1px -1px 0 #000,
-        1px -1px 0 #000,
-        -1px 1px 0 #000,
-        1px 1px 0 #000;
-
-    transition: color .25s ease-in-out;
+    transition: color 0.15s ease-in;
 }
 
-.header-nav > div{
-    background-color: yellow;
-    padding: .3em .3em;
-}
-
-.header-nav:hover{
+.nav-item:hover{
     color: white;
+}
+
+.nav-item > div:first-child{
+    margin: .5em 0;
+    padding: .3em;
+    min-width: 15vw;
+    background-color: yellow;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.nav-item > div:last-child{
+    width: 0;
+    margin: .5em 0;
+    border-top: 10vh solid yellow;
+    border-right: 10vh solid transparent;
 }

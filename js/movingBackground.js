@@ -29,6 +29,4 @@ function onload(){
         else if(movingBgIdx == 2)
             movingBgArr[2].style = "transform: translate(-" + (movingBgArr[2].width - window.innerWidth) + "px, -" + (movingBgArr[2].height - window.innerHeight - 1) + "px)"
     }, 8000)
-
-    
 }
