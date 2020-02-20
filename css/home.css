@@ -29,7 +29,8 @@
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #fff;
     text-shadow: 
-    -1px -1px #000,
+    0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black,0 0 4px black;
+    /* -1px -1px #000,
     1px -1px #000,
     -1px 1px #000,
     1px 1px #000,
@@ -52,8 +53,7 @@
     -3px -3px 12px rgb(238, 233, 118),
     3px -3px 12px rgb(238, 233, 118),
     -3px 3px 12px rgb(238, 233, 118),
-    3px 3px 12px rgb(238, 233, 118);    
-
+    3px 3px 12px rgb(238, 233, 118);     */
     font-size: 50pt;
 }
 

@@ -38,44 +38,80 @@
     z-index: 1;
 }
 
-/* color: rgb(238, 233, 118); */
-
-.nav-item{
+#nav-menu-click{
+    cursor: pointer;
     position: absolute;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: rgb(238, 233, 118);
-    text-shadow: 
-        -1px -1px #000,
-        1px -1px #000,
-        -1px 1px #000,
-        1px 1px #000,
-        -2px -2px #000,
-        2px -2px #000,
-        -2px 2px #000,
-        2px 2px #000;
-    font-size: 24pt;
+    width: 10vh;
+    height: 10vh;
+    left: 2vh;
+    top: 2vh;
+    
+    background-color: rgba(100, 100, 100, 0.7);
+    border-radius: 8px;
+    padding: 2vh;
 
     display: flex;
-
-    transition: color 0.15s ease-in;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: background-color .35s ease;
 }
 
-.nav-item:hover{
+#nav-menu-click > div{
+    height: 20%;
+    border-radius: 3px;
+
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: background-color .35s ease;
+}
+
+#nav-menu-click:hover{
+    background-color: rgba(100, 100, 100, .9);
+}
+
+#nav-menu-click:hover > div{
+    background-color: white;
+}
+
+#nav-menu{
+    position: fixed;
+    top: 0;
+    transform: translateX(-100%);
+    transition: transform 1s ease;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
+    font-size: 18pt;
 }
 
-.nav-item > div:first-child{
-    margin: .5em 0;
-    padding: .3em;
-    min-width: 15vw;
-    background-color: yellow;
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
+#nav-container{
+    position: relative;
+    width: 40vw;
+    height: 100vh;
+    background-color: black;
+    padding: 10px;
 }
 
-.nav-item > div:last-child{
+#nav-close-click{
+    cursor: pointer;
+    position: absolute;
+    right: -2.5vw;
+}
+
+#nav-triangle{
     width: 0;
-    margin: .5em 0;
-    border-top: 10vh solid yellow;
-    border-right: 10vh solid transparent;
+    border-top: 100vh solid black;
+    border-right: 5vw solid transparent;
+}
+
+#nav-outer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
 }
